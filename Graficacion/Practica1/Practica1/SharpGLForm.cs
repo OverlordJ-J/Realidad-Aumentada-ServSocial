@@ -68,6 +68,8 @@ namespace Practica1
             #endregion
 
             #region Poligonos
+
+            //Triang
             gl.Color(1.0f, 0.0f, 0.0f);
             gl.Begin(OpenGL.GL_TRIANGLES);
             gl.Vertex(-15, 60);
@@ -75,6 +77,7 @@ namespace Practica1
             gl.Vertex(0, 90);
             gl.End();
 
+            //cuad
             gl.Color(0.0f, 1.0f, 0.0f);
             gl.Begin(OpenGL.GL_QUADS);
             gl.Vertex(50, 90);
@@ -82,7 +85,86 @@ namespace Practica1
             gl.Vertex(20, 60);
             gl.Vertex(50, 60);
             gl.End();
+
+            //manecillas inversas 
+            //hexa
+            gl.Color(0.0f, 0.0f, 1.0f);
+            gl.Begin(OpenGL.GL_POLYGON);
+            gl.Vertex(-83.1f,24.84f);
+            gl.Vertex(-91.89f,15.99f);
+            gl.Vertex(-88.62f,3.96f);
+            gl.Vertex(-76.56f,0.77f);
+            gl.Vertex(-67.78f,9.62f);
+            gl.Vertex(-71.04f,21.65f);
+            gl.End();
+
+
             #endregion
+
+            #region Poligonos aristocraticos xd
+
+            //Triang
+            gl.Color(1.0f, 0.0f, 0.0f);
+            gl.Begin(OpenGL.GL_LINES);
+            gl.Vertex(-20, 40);
+            gl.Vertex(-5, 10);
+
+            gl.Vertex(-5, 10);
+            gl.Vertex(-35, 10);
+
+            gl.Vertex(-35, 10);
+            gl.Vertex(-20, 40);
+            gl.End();
+
+            //cuad
+            gl.Color(0.0f, 1.0f, 0.0f);
+            gl.Begin(OpenGL.GL_LINES);
+            gl.Vertex(10, 40);
+            gl.Vertex(40, 40);
+
+            gl.Vertex(10, 40);
+            gl.Vertex(10, 10);
+
+            gl.Vertex(10, 10);
+            gl.Vertex(40, 10);
+
+            gl.Vertex(40, 10);
+            gl.Vertex(40, 40);
+
+            gl.End();
+
+            //manecillas inversas 
+            //hexa -40
+            gl.Color(0.0f, 0.0f, 1.0f);
+            gl.Begin(OpenGL.GL_LINES);
+            gl.Vertex(-83.1f, -15.16f);
+            gl.Vertex(-91.89f, -24.99f);
+
+            gl.Vertex(-91.89f, -24.99f);
+            gl.Vertex(-88.62f, -37.96f);
+
+            gl.Vertex(-88.62f, -37.96f);
+            gl.Vertex(-76.56f, -39.77f);
+
+            gl.Vertex(-76.56f, -39.77f);
+            gl.Vertex(-67.78f, -31.62f);
+
+            gl.Vertex(-67.78f, -31.62f);
+            gl.Vertex(-71.04f, -19.65f);
+
+            gl.Vertex(-71.04f, -19.65f);
+            gl.Vertex(-83.1f, -15.16f);
+            gl.End();
+
+            #endregion
+
+            //gl.Vertex(-83.1f, 24.84f);
+            //gl.Vertex(-91.89f, 15.99f);
+            //gl.Vertex(-88.62f, 3.96f);
+            //gl.Vertex(-76.56f, 0.77f);
+            //gl.Vertex(-67.78f, 9.62f);
+            //gl.Vertex(-71.04f, 21.65f);
+            //gl.End();
         }
 
 
