@@ -158,13 +158,16 @@ namespace Practica1
 
             #endregion
 
-            //gl.Vertex(-83.1f, 24.84f);
-            //gl.Vertex(-91.89f, 15.99f);
-            //gl.Vertex(-88.62f, 3.96f);
-            //gl.Vertex(-76.56f, 0.77f);
-            //gl.Vertex(-67.78f, 9.62f);
-            //gl.Vertex(-71.04f, 21.65f);
-            //gl.End();
+            #region Circulo
+            gl.Color(1.0f, 1.0f, 1.0f);
+            gl.Begin(OpenGL.GL_POLYGON);
+            for (int i = 0; i < 360; i++)
+            {
+                gl.Vertex(20 * Math.Cos(i), 20 * Math.Sin(i));
+            }
+                gl.End();
+            #endregion
+
         }
 
 
