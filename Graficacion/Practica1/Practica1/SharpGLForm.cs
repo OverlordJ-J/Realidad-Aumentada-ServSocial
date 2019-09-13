@@ -163,7 +163,15 @@ namespace Practica1
             gl.Begin(OpenGL.GL_POLYGON);
             for (int i = 0; i < 360; i++)
             {
-                gl.Vertex(((20 * Math.Cos(i))-40), 20 * Math.Sin(i)-20);
+                gl.Vertex(((20 * Math.Cos(i)) - 40), 20 * Math.Sin(i) - 20);
+            }
+            gl.End();
+
+            gl.Color(1.0f, 1.0f, 1.0f);
+            gl.Begin(OpenGL.GL_LINE_STRIP);
+            for (int i = 0; i < 360; i++)
+            {
+                gl.Vertex(((20 * Math.Cos(i))+40), 20 * Math.Sin(i)-20);
             }
                 gl.End();
             #endregion
