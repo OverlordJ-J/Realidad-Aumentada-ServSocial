@@ -169,11 +169,22 @@ namespace Practica1
 
             gl.Color(1.0f, 1.0f, 1.0f);
             gl.Begin(OpenGL.GL_LINE_STRIP);
-            for (int i = 0; i < 360; i++)
+            for (double i = 0; i < 360; i++)
             {
-                gl.Vertex(((20 * Math.Cos(i))+40), 20 * Math.Sin(i)-20);
+                gl.Vertex(((20 * Math.Cos(i)) + 40), 20 * Math.Sin(i) - 20);
             }
-                gl.End();
+            gl.End();
+
+            //gl.Color(1.0f, 1.0f, 1.0f);
+            //gl.Begin(OpenGL.GL_LINES);
+            //double radio = 20;
+            //for (double i = 0; i < 360; i++)
+            //{
+            //    double b = (i * (Math.PI)) / 180;
+            //    Console.WriteLine(Math.Cos(b));
+            //    gl.Vertex(Math.Cos(b) * radio, Math.Sin(b) * radio, 0);
+            //}
+            //gl.End();
             #endregion
 
         }
