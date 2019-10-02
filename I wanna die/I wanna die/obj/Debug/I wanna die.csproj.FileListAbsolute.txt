@@ -1,0 +1,14 @@
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\bin\Debug\I wanna die.exe.config
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\bin\Debug\I wanna die.exe
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\bin\Debug\I wanna die.pdb
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\bin\Debug\OpenTK.dll
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\bin\Debug\OpenTK.GLControl.dll
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\bin\Debug\OpenTK.pdb
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\bin\Debug\OpenTK.xml
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\bin\Debug\OpenTK.GLControl.xml
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\obj\Debug\I wanna die.csprojResolveAssemblyReference.cache
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\obj\Debug\I_wanna_die.Form1.resources
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\obj\Debug\I_wanna_die.Properties.Resources.resources
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\obj\Debug\I wanna die.csproj.GenerateResource.Cache
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\obj\Debug\I wanna die.exe
+c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\obj\Debug\I wanna die.pdb
