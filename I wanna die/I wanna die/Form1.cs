@@ -129,7 +129,7 @@ namespace I_wanna_die
                 Cur = Peano(n - 1, Cur, L / 4.0);
                 Cur.angulo += Math.PI / 4.0;
                 Cur.angulo += Math.PI / 4.0;
-                Cur.angulo = Math.PI / 4.0;
+                Cur.angulo -= Math.PI / 4.0;
                 //Cur = Peano(n - 1, Cur, L / 4.0);
             }
             return Cur;
