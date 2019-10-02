@@ -12,3 +12,17 @@ c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\obj
 c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\obj\Debug\I wanna die.csproj.GenerateResource.Cache
 c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\obj\Debug\I wanna die.exe
 c:\users\fus-3\documents\visual studio 2013\Projects\I wanna die\I wanna die\obj\Debug\I wanna die.pdb
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\bin\Debug\I wanna die.exe.config
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\obj\Debug\I wanna die.exe
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\obj\Debug\I wanna die.pdb
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\bin\Debug\I wanna die.exe
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\bin\Debug\I wanna die.pdb
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\bin\Debug\OpenTK.dll
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\bin\Debug\OpenTK.pdb
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\bin\Debug\OpenTK.xml
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\obj\Debug\I wanna die.csprojResolveAssemblyReference.cache
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\obj\Debug\I_wanna_die.Form1.resources
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\obj\Debug\I_wanna_die.Properties.Resources.resources
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\I wanna die\I wanna die\obj\Debug\I wanna die.csproj.GenerateResource.Cache
