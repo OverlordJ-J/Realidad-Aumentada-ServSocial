@@ -54,26 +54,26 @@ namespace I_wanna_die
 
         private void glControl1_Paint(object sender, PaintEventArgs e)
         {
-            double h = 300.0 + (600.0 * Math.Sin(-2.0 * Math.PI / 3.0));
-            Cursor C1 = new Cursor(-200.0, 0.0, 1.0*Math.PI/2.0);
-            //Cursor C2 = new Cursor( 200.0, 200.0, -2.0 * Math.PI/3.0);
-            Cursor C2 = new Cursor(-0.0, 300.0, -2.0*Math.PI / 2.0);
-            Cursor C3 = new Cursor(0.0, -0.0, Math.PI/2.0);
-            Cursor C4 = new Cursor(200.0, -0.0, 2.0*Math.PI / 2.0);
-            Cursor C5 = new Cursor(200.0, -0.0, Math.PI / 2.0);
-            //C1.P.x = -450.0; C1.P.y = 0.0; C1.angulo = 0.0;
+            //double h = 300.0 + (600.0 * Math.Sin(-2.0 * Math.PI / 3.0));
 
+            Cursor C1 = new Cursor(0.0 , 0.0 , Math.PI);         
+            //Cursor C2 = new Cursor(-0.0, 300.0, -2.0*Math.PI / 2.0);
+            //Cursor C3 = new Cursor(0.0, -0.0, Math.PI/2.0);
+            //Cursor C4 = new Cursor(200.0, -0.0, 2.0*Math.PI / 2.0);
+            //Cursor C5 = new Cursor(200.0, -0.0, Math.PI / 2.0);
+            //C1.P.x = -450.0; C1.P.y = 0.0; C1.angulo = 0.0;
+            //Cursor C2 = new Cursor( 200.0, 200.0, -2.0 * Math.PI/3.0);
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
             //Koch(iteracion, C1, 600.0);
             //Koch(iteracion, C2, 600.0);
             //Koch(iteracion, C3, 600.0);
 
-            Peano(iteracion, C1, 300.0);
-            Peano(iteracion, C2, 200.0);
-            Peano(iteracion, C3, 300.0);
-            Peano(iteracion, C4, 200.0);
-            Peano(iteracion, C5, 300.0);
+            Peano(iteracion, C1, 100.0);
+            //Peano(iteracion, C2, 200.0);
+            //Peano(iteracion, C3, 300.0);
+            //Peano(iteracion, C4, 200.0);
+            //Peano(iteracion, C5, 300.0);
 
             glControl1.SwapBuffers();
         }
@@ -125,16 +125,31 @@ namespace I_wanna_die
             }
             else
             {
-                Cur = Peano(n - 1, Cur, L / 4.0); //F
-                Cur.angulo += Math.PI / 4.0;
-                Cur.angulo += Math.PI / 4.0;
-                Cur = Peano(n - 1, Cur, L / 4.0);
-                Cur.angulo += Math.PI / 4.0;
-                Cur.angulo += Math.PI / 2.0;
+                // ff+f+f+ff+f+f-f
+                // deg 90 
+                
+                Cur = Peano(n - 1, Cur, L / 2.0); //F
+                Cur = Peano(n - 1, Cur, L / 2.0);//F
+                //Cur.angulo -= Math.PI / 2.0;//-
+                Cur.angulo += Math.PI / 2.0;//+
+                Cur = Peano(n - 1, Cur, L / 2.0); //F
+                //Cur.angulo -= Math.PI / 2.0;//-
+                Cur.angulo += Math.PI / 2.0;//+
+                Cur = Peano(n - 1, Cur, L / 2.0); //F
+                Cur.angulo += Math.PI / 2.0;//+
+                Cur = Peano(n - 1, Cur, L / 2.0); //F
+                Cur = Peano(n - 1, Cur, L / 2.0);//F
+                Cur.angulo += Math.PI / 2.0;//+
+                Cur = Peano(n - 1, Cur, L / 2.0);//F
+                Cur.angulo += Math.PI / 2.0;//+
+                Cur = Peano(n - 1, Cur, L / 2.0);//F
+                Cur.angulo -= Math.PI / 2.0;//-
+                Cur = Peano(n - 1, Cur, L / 2.0); //F
+               
                 //Cur = Peano(n - 1, Cur, L / 4.0);
                 //Cur.angulo += Math.PI / 4.0;
                 //Cur.angulo += Math.PI / 4.0;
-                Cur.angulo -= Math.PI / 4.0;
+                //Cur.angulo -= Math.PI / 4.0;
                 //Cur = Peano(n - 1, Cur, L / 4.0);
             }
             return Cur;
