@@ -56,9 +56,9 @@ namespace I_wanna_die
         {
             //double h = 300.0 + (600.0 * Math.Sin(-2.0 * Math.PI / 3.0));
 
-            Cursor C1 = new Cursor(0.0 , 0.0 , Math.PI);         
-            //Cursor C2 = new Cursor(-0.0, 300.0, -2.0*Math.PI / 2.0);
-            //Cursor C3 = new Cursor(0.0, -0.0, Math.PI/2.0);
+            Cursor C1 = new Cursor(300.0 , 0.0 , Math.PI);         
+            Cursor C2 = new Cursor(-0.0, 300.0, -2.0*Math.PI / 2.0);
+            Cursor C3 = new Cursor(0.0, -0.0, Math.PI/2.0);
             //Cursor C4 = new Cursor(200.0, -0.0, 2.0*Math.PI / 2.0);
             //Cursor C5 = new Cursor(200.0, -0.0, Math.PI / 2.0);
             //C1.P.x = -450.0; C1.P.y = 0.0; C1.angulo = 0.0;
@@ -69,7 +69,7 @@ namespace I_wanna_die
             //Koch(iteracion, C2, 600.0);
             //Koch(iteracion, C3, 600.0);
 
-            Peano(iteracion, C1, 100.0);
+            Peano(iteracion, C1, 150.0);
             //Peano(iteracion, C2, 200.0);
             //Peano(iteracion, C3, 300.0);
             //Peano(iteracion, C4, 200.0);
@@ -117,7 +117,7 @@ namespace I_wanna_die
                 P1.x = C.P.x + (L * Math.Cos(C.angulo));
                 P1.y = C.P.y + (L * Math.Sin(C.angulo));
                 GL.Begin(PrimitiveType.Lines);
-                GL.Color3(Color.White);
+                GL.Color3(Color.Aqua);
                 GL.Vertex2(C.P.x, C.P.y);
                 GL.Vertex2(P1.x, P1.y);
                 GL.End();
