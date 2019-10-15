@@ -65,7 +65,7 @@ namespace I_wanna_die
             //Cursor C2 = new Cursor( 200.0, 200.0, -2.0 * Math.PI/3.0);
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
-            //Koch(iteracion, C1, 600.0);
+            //Koch(iteracion, C1, 200.0);
             //Koch(iteracion, C2, 600.0);
             //Koch(iteracion, C3, 600.0);
 
@@ -97,12 +97,14 @@ namespace I_wanna_die
             {
                 Cur = Koch(n - 1, Cur, L / 2.0); //F
                 Cur.angulo += Math.PI / 2.0;
-                Cur.angulo += Math.PI / 2.0;
+                //Cur.angulo += Math.PI / 2.0;
                 Cur = Koch(n - 1, Cur, L / 2.0);
                 Cur.angulo += Math.PI / 2.0;
+                //Cur.angulo += Math.PI / 2.0;
+                Cur = Koch(n - 1, Cur, L / 2.0);
                 Cur.angulo += Math.PI / 2.0;
-                //Cur = Koch(n - 1, Cur, L / 2.0);
-                Cur.angulo -= Math.PI / 2.0;
+                Cur = Koch(n - 1, Cur, L / 2.0);
+                //Cur.angulo += Math.PI / 2.0;
                 //Cur = Koch(n - 1, Cur, L / 2.0);
             }
             return Cur;
