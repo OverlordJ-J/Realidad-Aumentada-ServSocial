@@ -52,6 +52,11 @@ namespace OpenTK
             Punto B = new Punto(50.0, -50.0, 0.0);
             Punto C = new Punto(0.0, 50.0, 0.0);
 
+            Punto AP = new Punto(25.0, 25.0, 0.0);
+            Punto BP = new Punto(-25.0, 25.0, 0.0);
+            Punto CP = new Punto(-25.0, -25.0, 0.0);
+            Punto DP = new Punto(25.0, -25.0, 0.0);
+
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
             //GL.Begin(PrimitiveType.Triangles);
@@ -61,7 +66,8 @@ namespace OpenTK
             //    GL.Vertex2(C.x, C.y);
             //GL.End();
 
-            sierpinsky(iteracion, A, B, C);
+            //sierpinsky(iteracion, A, B, C);
+            Pitagoras(iteracion, AP, BP, CP, DP);
 
             glControl1.SwapBuffers();
         }
@@ -87,6 +93,31 @@ namespace OpenTK
                 sierpinsky(n - 1, A, AB, AC); //Triangulo 1
                 sierpinsky(n - 1, AB, B, CB); //Triangulo 2
                 sierpinsky(n - 1, AC, CB, C); //Triangulo 3
+            }
+        }
+
+        void Pitagoras(double n, Punto A, Punto B, Punto C, Punto D)
+        {
+            if (n == 0)
+            {
+                GL.Begin(PrimitiveType.Quads);
+                GL.Color3(Color.Red);
+                GL.Vertex2(A.x, A.y);
+                GL.Vertex2(B.x, B.y);
+                GL.Vertex2(C.x, C.y);
+                GL.Vertex2(D.x, D.y);
+
+                GL.End();
+            }
+            else
+            {
+                //AB = PuntoMedio(A, B);
+                //AC = PuntoMedio(A, C);
+                //CB = PuntoMedio(C, B);
+
+                //sierpinsky(n - 1, A, AB, AC); //Triangulo 1
+                //sierpinsky(n - 1, AB, B, CB); //Triangulo 2
+                //sierpinsky(n - 1, AC, CB, C); //Triangulo 3
             }
         }
 

@@ -13,3 +13,18 @@ c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\obj\Debug\Ope
 c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\obj\Debug\OpenTK.exe
 c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\obj\Debug\OpenTK.pdb
 C:\Users\Fus-3\Documents\Visual Studio 2013\Projects\OpenTK\OpenTK\bin\Debug\OpenTK.GLControl.pdb
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\bin\Debug\OpenTK.exe.config
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\obj\Debug\OpenTK.exe
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\obj\Debug\OpenTK.pdb
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\bin\Debug\OpenTK.exe
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\bin\Debug\OpenTK.pdb
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\bin\Debug\OpenTK.dll
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\bin\Debug\OpenTK.xml
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\bin\Debug\OpenTK.GLControl.pdb
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\obj\Debug\OpenTK.csprojResolveAssemblyReference.cache
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\obj\Debug\OpenTK.Form1.resources
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\obj\Debug\OpenTK.Properties.Resources.resources
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\OpenTK\OpenTK\obj\Debug\OpenTK.csproj.GenerateResource.Cache
