@@ -1,1 +1,6 @@
 c:\users\xavipro\documents\visual studio 2013\Projects\formas\formas\bin\Debug\formas.exe.config
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\formas\formas\bin\Debug\formas.exe.config
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\formas\formas\obj\Debug\formas.csprojResolveAssemblyReference.cache
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\formas\formas\obj\Debug\formas.Form1.resources
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\formas\formas\obj\Debug\formas.Properties.Resources.resources
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\formas\formas\obj\Debug\formas.csproj.GenerateResource.Cache

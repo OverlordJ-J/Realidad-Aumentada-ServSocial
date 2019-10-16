@@ -1,0 +1,15 @@
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\bin\Debug\OpenTK.exe.config
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\bin\Debug\OpenTK.exe
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\bin\Debug\OpenTK.pdb
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\bin\Debug\OpenTK.Compatibility.dll
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\bin\Debug\OpenTK.dll
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\bin\Debug\OpenTK.GLControl.dll
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\bin\Debug\OpenTK.xml
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\bin\Debug\OpenTK.GLControl.xml
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\obj\Debug\OpenTK.csprojResolveAssemblyReference.cache
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\obj\Debug\OpenTK.Form1.resources
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\obj\Debug\OpenTK.Properties.Resources.resources
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\obj\Debug\OpenTK.csproj.GenerateResource.Cache
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\obj\Debug\OpenTK.exe
+c:\users\fus-3\documents\visual studio 2013\Projects\OpenTK\OpenTK\obj\Debug\OpenTK.pdb
+C:\Users\Fus-3\Documents\Visual Studio 2013\Projects\OpenTK\OpenTK\bin\Debug\OpenTK.GLControl.pdb
