@@ -124,7 +124,7 @@ namespace OpenTK
         Punto Hipo(Punto p1, Punto p2)
         {
             Punto PE = new Punto(0, 0, 0);
-
+            
              
         }
 

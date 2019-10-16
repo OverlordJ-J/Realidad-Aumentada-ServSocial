@@ -1,1 +1,2 @@
 c:\users\fus-3\documents\visual studio 2013\Projects\Practica3\Practica3\bin\Debug\Practica3.exe.config
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\Practica3.exe.config

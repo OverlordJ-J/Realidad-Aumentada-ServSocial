@@ -112,11 +112,78 @@ namespace Practica3
             }
         }
 
-        Punto Hipo(Punto p1, Punto p2)
+        //Punto Hipo(Punto p1, Punto p2)
+        //{
+        //    Punto PE = new Punto(0, 0, 0);
+        //    Punto PF = new Punto(0, 0, 0);
+        //    Punto PG = new Punto(0, 0, 0);
+        //    Punto PH = new Punto(0, 0, 0);
+        //    Punto PI = new Punto(0, 0, 0);
+
+        //    PE.x = p1.x + Math.Cos(Math.PI / 3) * Math.Cos(Math.PI / 3) * Math.Abs(p1.x - p2.x);
+        //    PE.y = p1.y + Math.Sin(Math.PI / 3) * Math.Sin(Math.PI / 3) * Math.Abs(p1.y - p2.y);
+
+        //    PF.x = p1.x + Math.Cos((Math.PI / 3) + (Math.PI / 2)) * Math.Abs(PE.x - p1.x);
+        //    PF.x = p1.y + Math.Sin((Math.PI / 3) + (Math.PI / 2)) * Math.Abs(PE.y - p1.y);
+
+        //    PG.x = PE.x + Math.Cos((Math.PI / 3) + (Math.PI / 2)) * Math.Abs(PE.x - p1.x);
+        //    PG.y = PE.y + Math.Sin((Math.PI / 3) + (Math.PI / 2)) * Math.Abs(PE.y - p1.y);
+
+        //    PH.x = p2.x + Math.Cos(Math.PI / 3) * Math.Abs(PE.x - p2.x);
+        //    PH.y = p2.y + Math.Sin(Math.PI / 3) * Math.Abs(PE.y - p2.y);
+
+        //    PI.x = PE.x + Math.Cos(Math.PI / 3) * Math.Abs(PE.x - p2.x);
+        //    PI.y = PE.x + Math.Sin(Math.PI / 3) * Math.Abs(PE.y - p2.y);
+        //}
+
+        Punto E(Punto p1, Punto p2)
         {
             Punto PE = new Punto(0, 0, 0);
 
+            PE.x = p1.x + Math.Cos(Math.PI / 3) * Math.Cos(Math.PI / 3) * Math.Abs(p1.x - p2.x);
+            PE.y = p1.y + Math.Sin(Math.PI / 3) * Math.Sin(Math.PI / 3) * Math.Abs(p1.y - p2.y);
 
+            return PE;
+        }
+
+        Punto F(Punto p1, Punto PE)
+        {
+            Punto PF = new Punto(0, 0, 0);
+
+            PF.x = p1.x + Math.Cos((Math.PI / 3) + (Math.PI / 2)) * Math.Abs(PE.x - p1.x);
+            PF.x = p1.y + Math.Sin((Math.PI / 3) + (Math.PI / 2)) * Math.Abs(PE.y - p1.y);
+
+            return PF;
+        }
+
+        Punto G(Punto p1, Punto PE)
+        {
+            Punto PG = new Punto(0, 0, 0);
+
+            PG.x = PE.x + Math.Cos((Math.PI / 3) + (Math.PI / 2)) * Math.Abs(PE.x - p1.x);
+            PG.y = PE.y + Math.Sin((Math.PI / 3) + (Math.PI / 2)) * Math.Abs(PE.y - p1.y);
+
+            return PG;
+        }
+
+        Punto H(Punto p2, Punto PE)
+        {
+            Punto PH = new Punto(0, 0, 0);
+
+            PH.x = p2.x + Math.Cos(Math.PI / 3) * Math.Abs(PE.x - p2.x);
+            PH.y = p2.y + Math.Sin(Math.PI / 3) * Math.Abs(PE.y - p2.y);
+
+            return PH;
+        }
+
+        Punto I(Punto p2, Punto PE)
+        {
+            Punto PI = new Punto(0, 0, 0);
+
+            PI.x = PE.x + Math.Cos(Math.PI / 3) * Math.Abs(PE.x - p2.x);
+            PI.y = PE.x + Math.Sin(Math.PI / 3) * Math.Abs(PE.y - p2.y);
+
+            return PI;
         }
 
         Punto PuntoMedio(Punto P0, Punto P1)
