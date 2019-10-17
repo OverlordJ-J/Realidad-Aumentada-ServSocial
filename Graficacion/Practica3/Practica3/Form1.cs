@@ -13,7 +13,7 @@ namespace Practica3
 {
     public partial class Form1 : Form
     {
-        double xmax = 100.0, ymax = 100.0, zmax = 1.0;
+        double xmax = 500.0, ymax = 500.0, zmax = 1.0;
         double iteracion = 0;
         public struct Punto
         {
@@ -89,26 +89,27 @@ namespace Practica3
 
         void Pitagoras(double n, Punto A, Punto B, Punto C, Punto D)
         {
-            if (n == 0)
-            {
-                GL.Begin(PrimitiveType.Quads);
-                GL.Color3(Color.Red);
-                GL.Vertex2(A.x, A.y);
-                GL.Vertex2(B.x, B.y);
-                GL.Vertex2(C.x, C.y);
-                GL.Vertex2(D.x, D.y);
+            Punto PE = new Punto(), PF = new Punto(), PG = new Punto(), PH = new Punto(), PI = new Punto();
+            // if (n == 0)
 
-                GL.End();
-            }
-            else
-            {
-                //AB = PuntoMedio(A, B);
-                //AC = PuntoMedio(A, C);
-                //CB = PuntoMedio(C, B);
+            GL.Begin(PrimitiveType.Quads);
+            GL.Color3(Color.Red);
+            GL.Vertex2(A.x, A.y);
+            GL.Vertex2(B.x, B.y);
+            GL.Vertex2(C.x, C.y);
+            GL.Vertex2(D.x, D.y);
+            GL.End();
 
-                //sierpinsky(n - 1, A, AB, AC); //Triangulo 1
-                //sierpinsky(n - 1, AB, B, CB); //Triangulo 2
-                //sierpinsky(n - 1, AC, CB, C); //Triangulo 3
+            if (n != 0)
+            {
+                PE = E(B, A);
+                PF = F(B, PE);
+                PG = G(B, PE);
+                PH = H(A, PE);
+                PI = I(A, PE);
+
+                Pitagoras(n - 1, PG, PF, B, PE);
+                Pitagoras(n - 1, PH, PI, PE, A);
             }
         }
 
@@ -140,8 +141,11 @@ namespace Practica3
         {
             Punto PE = new Punto(0, 0, 0);
 
-            PE.x = p1.x + Math.Cos(Math.PI / 3) * Math.Cos(Math.PI / 3) * Math.Abs(p1.x - p2.x);
-            PE.y = p1.y + Math.Sin(Math.PI / 3) * Math.Sin(Math.PI / 3) * Math.Abs(p1.y - p2.y);
+            PE.x = p1.x + Math.Cos(Math.PI / 3) * Math.Cos(Math.PI / 3) * Math.Sqrt(p1.x * p1.x) + Math.Sqrt(p2.x * p2.x);
+            //PE.x = p1.x + Math.Cos(alpha) * Math.Cos(alpha) * Math.Sqrt(p1.x * p1.x) - Math.Sqrt(p2.x * p2.x);
+
+            PE.y = p1.y + Math.Sin(Math.PI / 3) * Math.Sin(Math.PI / 3) * Math.Sqrt(p1.y * p1.y) + Math.Sqrt(p2.y * p2.y);
+            //PE.y = p1.y + Math.Sin(alpha) * Math.Sin(alpha) * Math.Sqrt(p1.y * p1.y) - Math.Sqrt(p2.y * p2.y);
 
             return PE;
         }
@@ -150,8 +154,11 @@ namespace Practica3
         {
             Punto PF = new Punto(0, 0, 0);
 
-            PF.x = p1.x + Math.Cos((Math.PI / 3) + (Math.PI / 2)) * Math.Abs(PE.x - p1.x);
-            PF.x = p1.y + Math.Sin((Math.PI / 3) + (Math.PI / 2)) * Math.Abs(PE.y - p1.y);
+            PF.x = p1.x + (Math.Cos((Math.PI / 3) + (Math.PI / 2))) * Math.Sqrt(PE.x * PE.x) + Math.Sqrt(p1.x * p1.x);
+            //PF.x = p1.x + Math.Cos((alpha) + (Math.PI / 2)) * Math.Sqrt(PE.x * PE.x) + Math.Sqrt(p1.x * p1.x);
+
+            PF.y = p1.y + (Math.Sin((Math.PI / 3) + (Math.PI / 2))) * Math.Sqrt(PE.y * PE.y) + Math.Sqrt(p1.y * p1.y);
+            //PF.y = p1.y + Math.Sin((alpha) + (Math.PI / 2)) * Math.Sqrt(PE.y * PE.y) + Math.Sqrt(p1.y * p1.y);
 
             return PF;
         }
@@ -160,8 +167,8 @@ namespace Practica3
         {
             Punto PG = new Punto(0, 0, 0);
 
-            PG.x = PE.x + Math.Cos((Math.PI / 3) + (Math.PI / 2)) * Math.Abs(PE.x - p1.x);
-            PG.y = PE.y + Math.Sin((Math.PI / 3) + (Math.PI / 2)) * Math.Abs(PE.y - p1.y);
+            PG.x = PE.x + (Math.Cos((Math.PI / 3) + (Math.PI / 2))) * Math.Sqrt(PE.x * PE.x) + Math.Sqrt(p1.x * p1.x);
+            PG.y = PE.y + (Math.Sin((Math.PI / 3) + (Math.PI / 2))) * Math.Sqrt(PE.y * PE.y) + Math.Sqrt(p1.y * p1.y);
 
             return PG;
         }
@@ -170,8 +177,8 @@ namespace Practica3
         {
             Punto PH = new Punto(0, 0, 0);
 
-            PH.x = p2.x + Math.Cos(Math.PI / 3) * Math.Abs(PE.x - p2.x);
-            PH.y = p2.y + Math.Sin(Math.PI / 3) * Math.Abs(PE.y - p2.y);
+            PH.x = p2.x + Math.Cos(Math.PI / 3) * Math.Sqrt(PE.x * PE.x) + Math.Sqrt(p2.x * p2.x);
+            PH.y = p2.y + Math.Sin(Math.PI / 3) * Math.Sqrt(PE.y * PE.y) + Math.Sqrt(p2.y * p2.y);
 
             return PH;
         }
@@ -180,8 +187,8 @@ namespace Practica3
         {
             Punto PI = new Punto(0, 0, 0);
 
-            PI.x = PE.x + Math.Cos(Math.PI / 3) * Math.Abs(PE.x - p2.x);
-            PI.y = PE.x + Math.Sin(Math.PI / 3) * Math.Abs(PE.y - p2.y);
+            PI.x = PE.x + Math.Cos(Math.PI / 3) * Math.Sqrt(PE.x * PE.x) + Math.Sqrt(p2.x * p2.x);
+            PI.y = PE.y + Math.Sin(Math.PI / 3) * Math.Sqrt(PE.y * PE.y) + Math.Sqrt(p2.y * p2.y);
 
             return PI;
         }
