@@ -1,2 +1,19 @@
 c:\users\fus-3\documents\visual studio 2013\Projects\Practica3\Practica3\bin\Debug\Practica3.exe.config
 C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\Practica3.exe.config
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\Practica3.exe.config
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\Practica3.exe
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\Practica3.pdb
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\OpenTK.Compatibility.dll
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\OpenTK.dll
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\OpenTK.pdb
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\OpenTK.xml
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\OpenTK.dll.config
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\OpenTK.Compatibility.dll.config
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\obj\Debug\Practica3.csprojResolveAssemblyReference.cache
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\obj\Debug\Practica3.Properties.Resources.resources
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\obj\Debug\Practica3.csproj.GenerateResource.Cache
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\obj\Debug\Practica3.csproj.CoreCompileInputs.cache
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\obj\Debug\Practica3.exe
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\Practica3\Practica3\obj\Debug\Practica3.pdb

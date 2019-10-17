@@ -50,17 +50,74 @@ namespace Practica3
             Punto B = new Punto(50.0, -50.0, 0.0);
             Punto C = new Punto(0.0, 50.0, 0.0);
 
-            Punto AP = new Punto(25.0, 25.0, 0.0);
-            Punto BP = new Punto(-25.0, 25.0, 0.0);
-            Punto CP = new Punto(-25.0, -25.0, 0.0);
-            Punto DP = new Punto(25.0, -25.0, 0.0);
+            Punto AP = new Punto(100.0, 100.0, 0.0);
+            Punto BP = new Punto(-100.0, 100.0, 0.0);
+            Punto CP = new Punto(-100.0, -100.0, 0.0);
+            Punto DP = new Punto(100.0, -100.0, 0.0);
 
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
 
             //sierpinsky(iteracion, A, B, C);
-            Pitagoras(iteracion, AP, BP, CP, DP);
-
+            // Pitagoras(iteracion, AP, BP, CP, DP);
+            sierpinskyCarpet(iteracion, AP, BP, CP, DP);
             glControl1.SwapBuffers();
+        }
+
+        void sierpinskyCarpet(double n, Punto A, Punto B, Punto C,Punto D)
+        {
+            Punto AB = new Punto(), BC = new Punto(), CD = new Punto(), DA=new Punto(), AC2 = new Punto(), AC = new Punto(), BD = new Punto(), BD2 = new Punto();
+            if (n == 0)
+            {
+                GL.Begin(PrimitiveType.Polygon);
+                GL.Color3(Color.Green);
+                GL.Vertex2(A.x, A.y);
+                GL.Vertex2(B.x, B.y);
+                GL.Vertex2(C.x, C.y);
+                GL.Vertex2(D.x, D.y);
+                GL.End();
+            }
+            else
+            {
+                
+                AC = PuntoMedio2(A, B);
+                BD = PuntoMedio2(B, D);
+                AC2 = PuntoMedio3(A, C);
+                BD2 = PuntoMedio3(B, D);
+
+
+                sierpinskyCarpet(n - 1, A, B, AC, BD);
+                sierpinskyCarpet(n - 1, AC, B, AC2, BD);
+                sierpinskyCarpet(n - 1, AC2, B, C, BD);
+                sierpinskyCarpet(n - 1, A, BD, AC, BD2);
+                sierpinskyCarpet(n - 1, AC2, BD, C, BD2);
+                sierpinskyCarpet(n - 1, A, BD2, AC, D);
+                sierpinskyCarpet(n - 1,AC,BD2,AC2,D);
+                sierpinskyCarpet(n - 1,AC2,BD2,C,D);
+
+
+                //////////////Code////////////////
+                //alfombrizar(g, x1, y1, (x2 - x1) / 3 + x1, (y2 - y1) / 3 + y1, fases????? );
+                //alfombrizar(g, (x2 - x1) / 3 + x1, y1, (x2 - x1) * 2 / 3 + x1, (y2 - y1) / 3 + y1, f);
+                //alfombrizar(g, (x2 - x1) * 2 / 3 + x1, y1, x2, (y2 - y1) / 3 + y1, f);
+                //alfombrizar(g, x1, (y2 - y1) / 3 + y1, (x2 - x1) / 3 + x1, (y2 - y1) * 2 / 3 + y1, f);
+                //alfombrizar(g, (x2 - x1) * 2 / 3 + x1, (y2 - y1) / 3 + y1, x2, (y2 - y1) * 2 / 3 + y1, f);
+                //alfombrizar(g, x1, (y2 - y1) * 2 / 3 + y1, (x2 - x1) / 3 + x1, y2, f);
+                //alfombrizar(g, (x2 - x1) / 3 + x1, (y2 - y1) * 2 / 3 + y1, (x2 - x1) * 2 / 3 + x1, y2, f);
+                //alfombrizar(g, (x2 - x1) * 2 / 3 + x1, (y2 - y1) * 2 / 3 + y1, x2, y2, f);
+
+            }
+
+        }
+
+        Punto PuntoMedio3(Punto P0, Punto P1)
+        {
+            Punto P = new Punto(0, 0, 0);
+
+            P.x = ((P1.x - P0.x) *2 / 3.0 + P0.x);
+            P.y = ((P1.y - P0.y) *2 / 3.0 + P0.y);
+            //P.z = P0.z + ((P1.z - P0.z) / 2.0);
+
+            return P;
         }
 
         void sierpinsky(double n, Punto A, Punto B, Punto C)
@@ -191,6 +248,17 @@ namespace Practica3
             PI.y = PE.y + Math.Sin(Math.PI / 3) * Math.Sqrt(PE.y * PE.y) + Math.Sqrt(p2.y * p2.y);
 
             return PI;
+        }
+
+        Punto PuntoMedio2(Punto P0, Punto P1)
+        {
+            Punto P = new Punto(0, 0, 0);
+
+            P.x = ((P1.x - P0.x) / 3.0 + P0.x);
+            P.y = ((P1.y - P0.y) / 3.0 + P0.y); 
+            //P.z = P0.z + ((P1.z - P0.z) / 2.0);
+
+            return P;
         }
 
         Punto PuntoMedio(Punto P0, Punto P1)
