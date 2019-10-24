@@ -66,8 +66,8 @@ namespace OpenTK
             //    GL.Vertex2(C.x, C.y);
             //GL.End();
 
-            //sierpinsky(iteracion, A, B, C);
-            Pitagoras(iteracion, AP, BP, CP, DP);
+            sierpinsky(iteracion, A, B, C);
+            //Pitagoras(iteracion, AP, BP, CP, DP);
 
             glControl1.SwapBuffers();
         }
@@ -121,12 +121,12 @@ namespace OpenTK
             }
         }
 
-        Punto Hipo(Punto p1, Punto p2)
-        {
-            Punto PE = new Punto(0, 0, 0);
+        //Punto Hipo(Punto p1, Punto p2)
+        //{
+        //    Punto PE = new Punto(0, 0, 0);
             
              
-        }
+        //}
 
         Punto PuntoMedio(Punto P0, Punto P1)
         {
