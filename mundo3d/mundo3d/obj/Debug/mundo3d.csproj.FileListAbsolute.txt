@@ -1,0 +1,30 @@
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\bin\Debug\Mundo3d.exe.config
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\bin\Debug\Mundo3d.exe
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\bin\Debug\Mundo3d.pdb
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\bin\Debug\OpenTK.Compatibility.dll
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\bin\Debug\OpenTK.dll
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\bin\Debug\OpenTK.GLControl.dll
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\bin\Debug\OpenTK.pdb
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\bin\Debug\OpenTK.xml
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\bin\Debug\OpenTK.GLControl.xml
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\obj\Debug\Mundo3d.csprojResolveAssemblyReference.cache
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\obj\Debug\Mundo3d.Form1.resources
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\obj\Debug\Mundo3d.Properties.Resources.resources
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\obj\Debug\Mundo3d.csproj.GenerateResource.Cache
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\obj\Debug\Mundo3d.exe
+c:\users\fus-3\documents\visual studio 2013\Projects\Mundo3d\Mundo3d\obj\Debug\Mundo3d.pdb
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\bin\Debug\Mundo3d.exe.config
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\bin\Debug\Mundo3d.exe
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\bin\Debug\Mundo3d.pdb
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\bin\Debug\OpenTK.pdb
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\bin\Debug\OpenTK.xml
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\bin\Debug\OpenTK.dll.config
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\bin\Debug\OpenTK.Compatibility.dll.config
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\obj\Debug\Mundo3d.csprojResolveAssemblyReference.cache
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\obj\Debug\Mundo3D.Form1.resources
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\obj\Debug\Mundo3d.Properties.Resources.resources
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\obj\Debug\Mundo3d.csproj.GenerateResource.Cache
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\obj\Debug\Mundo3d.csproj.CoreCompileInputs.cache
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\obj\Debug\Mundo3d.exe
+C:\Users\Juan Jose\source\repos\mundo3d\Mundo3d\obj\Debug\Mundo3d.pdb
