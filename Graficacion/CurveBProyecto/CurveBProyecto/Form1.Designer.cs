@@ -32,9 +32,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cBoxLinea = new System.Windows.Forms.ComboBox();
+            this.cBoxCoor = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.NumUDX = new System.Windows.Forms.NumericUpDown();
+            this.NumUDY = new System.Windows.Forms.NumericUpDown();
+            this.NumUDZ = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.NumUDX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumUDY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumUDZ)).BeginInit();
             this.SuspendLayout();
             // 
             // glControl1
@@ -70,26 +80,34 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(763, 295);
+            this.textBox1.Location = new System.Drawing.Point(619, 493);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(113, 20);
             this.textBox1.TabIndex = 3;
             // 
-            // comboBox1
+            // cBoxLinea
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(646, 118);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cBoxLinea.FormattingEnabled = true;
+            this.cBoxLinea.Location = new System.Drawing.Point(646, 118);
+            this.cBoxLinea.Name = "cBoxLinea";
+            this.cBoxLinea.Size = new System.Drawing.Size(121, 21);
+            this.cBoxLinea.TabIndex = 4;
+            this.cBoxLinea.SelectedIndexChanged += new System.EventHandler(this.cBoxLinea_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cBoxCoor
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(828, 118);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 5;
+            this.cBoxCoor.FormattingEnabled = true;
+            this.cBoxCoor.Items.AddRange(new object[] {
+            "Punto 0",
+            "Punto 1",
+            "Punto 2",
+            "Punto 3",
+            "Punto 4"});
+            this.cBoxCoor.Location = new System.Drawing.Point(828, 118);
+            this.cBoxCoor.Name = "cBoxCoor";
+            this.cBoxCoor.Size = new System.Drawing.Size(121, 21);
+            this.cBoxCoor.TabIndex = 5;
+            this.cBoxCoor.SelectedIndexChanged += new System.EventHandler(this.cBoxCoor_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -100,14 +118,109 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Cordenada";
             // 
+            // NumUDX
+            // 
+            this.NumUDX.Location = new System.Drawing.Point(691, 257);
+            this.NumUDX.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.NumUDX.Minimum = new decimal(new int[] {
+            600,
+            0,
+            0,
+            -2147483648});
+            this.NumUDX.Name = "NumUDX";
+            this.NumUDX.Size = new System.Drawing.Size(120, 20);
+            this.NumUDX.TabIndex = 7;
+            // 
+            // NumUDY
+            // 
+            this.NumUDY.Location = new System.Drawing.Point(691, 299);
+            this.NumUDY.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.NumUDY.Minimum = new decimal(new int[] {
+            600,
+            0,
+            0,
+            -2147483648});
+            this.NumUDY.Name = "NumUDY";
+            this.NumUDY.Size = new System.Drawing.Size(120, 20);
+            this.NumUDY.TabIndex = 8;
+            // 
+            // NumUDZ
+            // 
+            this.NumUDZ.Location = new System.Drawing.Point(691, 348);
+            this.NumUDZ.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.NumUDZ.Minimum = new decimal(new int[] {
+            600,
+            0,
+            0,
+            -2147483648});
+            this.NumUDZ.Name = "NumUDZ";
+            this.NumUDZ.Size = new System.Drawing.Size(120, 20);
+            this.NumUDZ.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(650, 263);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "label4";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(650, 305);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "label5";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(650, 354);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "label6";
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(729, 393);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 13;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1042, 661);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.NumUDZ);
+            this.Controls.Add(this.NumUDY);
+            this.Controls.Add(this.NumUDX);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cBoxCoor);
+            this.Controls.Add(this.cBoxLinea);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -115,6 +228,9 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.NumUDX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumUDY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumUDZ)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,9 +242,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cBoxLinea;
+        private System.Windows.Forms.ComboBox cBoxCoor;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown NumUDX;
+        private System.Windows.Forms.NumericUpDown NumUDY;
+        private System.Windows.Forms.NumericUpDown NumUDZ;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }
 

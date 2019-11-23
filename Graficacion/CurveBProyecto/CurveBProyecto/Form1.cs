@@ -17,6 +17,7 @@ namespace CurveBProyecto
 
         double xmax = 800.0, ymax = 800.0, zmax = 800.0; //Tamaño del mundo
         double alpha = 30.0, betha = -30.0, gamma = 0.0; //Angulos de rotacion por eje
+        int Fila=0, Columna=0;
 
         private void glControl1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -291,14 +292,47 @@ namespace CurveBProyecto
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            int i;
+            for(i=0; i<12; i++)
+            {
+                cBoxLinea.Items.Add("Linea " + (i + 1).ToString());
+            }
+        }
 
+        private void cBoxCoor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Columna = (int)cBoxCoor.SelectedIndex;
+            NumUDX.Value = (decimal)pBezier[Fila, Columna].x;
+            NumUDY.Value = (decimal)pBezier[Fila, Columna].y;
+            NumUDZ.Value = (decimal)pBezier[Fila, Columna].z;
+        }
+
+        private void cBoxLinea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Fila = (int)cBoxLinea.SelectedIndex;
+            NumUDX.Value = (decimal)pBezier[Fila, Columna].x;
+            NumUDY.Value = (decimal)pBezier[Fila, Columna].y;
+            NumUDZ.Value = (decimal)pBezier[Fila, Columna].z;
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            ModificarPunto();
+            glControl1.Invalidate();
+        }
+
+        void ModificarPunto()
+        {
+            pBezier[Fila, Columna].x = (double)NumUDX.Value;
+            pBezier[Fila, Columna].y = (double)NumUDY.Value;
+            pBezier[Fila, Columna].z = (double)NumUDZ.Value;
         }
 
         public Form1()
         {
             InitializeComponent();
-
-            pBezier[0, 0] = new Punto(-500, 200, -600);
+            //---Puntos---
+            pBezier[0, 0] = new Punto(-500, 0, -600);
             pBezier[0, 1] = new Punto(-450, 200, -600);
             pBezier[0, 2] = new Punto(0, 200, -600);
             pBezier[0, 3] = new Punto(300, -400, -600);
@@ -310,13 +344,15 @@ namespace CurveBProyecto
             pBezier[1, 3] = new Punto(300, -400, -500);
             pBezier[1, 4] = new Punto(500, 0, -500);
 
+
+
             pBezier[2, 0] = new Punto(-500, 0, -400);
             pBezier[2, 1] = new Punto(-450, 200, -400);
             pBezier[2, 2] = new Punto(0, 200, -400);
             pBezier[2, 3] = new Punto(300, -400, -400);
             pBezier[2, 4] = new Punto(500, 0, -400);
 
-            pBezier[3, 0] = new Punto(-500,200, -300);
+            pBezier[3, 0] = new Punto(-500,0, -300);
             pBezier[3, 1] = new Punto(-450, 200, -300);
             pBezier[3, 2] = new Punto(0, 200, -300);
             pBezier[3, 3] = new Punto(300, -400, -300);
