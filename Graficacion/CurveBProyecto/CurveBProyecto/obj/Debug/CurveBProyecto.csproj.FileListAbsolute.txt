@@ -16,3 +16,6 @@ C:\Users\Juan Jose\source\repos\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBPr
 C:\Users\Juan Jose\source\repos\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.csproj.CoreCompileInputs.cache
 C:\Users\Juan Jose\source\repos\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.exe
 C:\Users\Juan Jose\source\repos\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.pdb
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\bin\Debug\CurveBProyecto.exe.config
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.exe
+C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.pdb
