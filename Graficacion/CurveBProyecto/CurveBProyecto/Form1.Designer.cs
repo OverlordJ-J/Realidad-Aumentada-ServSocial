@@ -102,7 +102,8 @@
             "Punto 1",
             "Punto 2",
             "Punto 3",
-            "Punto 4"});
+            "Punto 4",
+            "Punto 5"});
             this.cBoxCoor.Location = new System.Drawing.Point(828, 118);
             this.cBoxCoor.Name = "cBoxCoor";
             this.cBoxCoor.Size = new System.Drawing.Size(121, 21);

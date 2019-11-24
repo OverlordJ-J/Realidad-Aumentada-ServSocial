@@ -19,3 +19,18 @@ C:\Users\Juan Jose\source\repos\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBPr
 C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\bin\Debug\CurveBProyecto.exe.config
 C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.exe
 C:\Users\Fus-3\Documents\GitHub\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.pdb
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\bin\Debug\CurveBProyecto.exe.config
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\bin\Debug\CurveBProyecto.exe
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\bin\Debug\CurveBProyecto.pdb
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\bin\Debug\OpenTK.pdb
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\bin\Debug\OpenTK.xml
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\bin\Debug\OpenTK.dll.config
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\bin\Debug\OpenTK.Compatibility.dll.config
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.csprojResolveAssemblyReference.cache
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.Form1.resources
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.Properties.Resources.resources
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.csproj.GenerateResource.Cache
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.csproj.CoreCompileInputs.cache
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.exe
+C:\Users\Juan Jose\Documents\GitHub\Realidad-Aumentada-ServSocial1\Realidad-Aumentada-ServSocial\Graficacion\CurveBProyecto\CurveBProyecto\obj\Debug\CurveBProyecto.pdb

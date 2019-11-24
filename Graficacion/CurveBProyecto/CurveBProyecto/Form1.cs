@@ -79,8 +79,12 @@ namespace CurveBProyecto
             PB0 = pBezier[1, 0];
             for (t = 0.0; t <= 1.0; t += 0.01)
             {
-                PA1 = Bezier4(t, pBezier[0, 0], pBezier[0, 1], pBezier[0, 2], pBezier[0, 3], pBezier[0, 4]);
-                PB1 = Bezier4(t, pBezier[1, 0], pBezier[1, 1], pBezier[1, 2], pBezier[1, 3], pBezier[1, 4]);
+                //PA1 = Bezier4(t, pBezier[0, 0], pBezier[0, 1], pBezier[0, 2], pBezier[0, 3], pBezier[0, 4]);
+                //PB1 = Bezier4(t, pBezier[1, 0], pBezier[1, 1], pBezier[1, 2], pBezier[1, 3], pBezier[1, 4]);
+
+                PA1 = Bezier5(t, pBezier[0, 0], pBezier[0, 1], pBezier[0, 2], pBezier[0, 3], pBezier[0, 4], pBezier[0, 5]);
+                PB1 = Bezier5(t, pBezier[1, 0], pBezier[1, 1], pBezier[1, 2], pBezier[1, 3], pBezier[1, 4], pBezier[1, 5]);
+
 
                 GL.Begin(PrimitiveType.Quads);
                 Normal = normal(PB1, PA1, PB0);
@@ -97,8 +101,8 @@ namespace CurveBProyecto
             PB0 = pBezier[2, 0];
             for (t = 0.0; t <= 1.0; t += 0.01)
             {
-                PA1 = Bezier4(t, pBezier[1, 0], pBezier[1, 1], pBezier[1, 2], pBezier[1, 3], pBezier[1, 4]);
-                PB1 = Bezier4(t, pBezier[2, 0], pBezier[2, 1], pBezier[2, 2], pBezier[2, 3], pBezier[2, 4]);
+                PA1 = Bezier5(t, pBezier[1, 0], pBezier[1, 1], pBezier[1, 2], pBezier[1, 3], pBezier[1, 4], pBezier[1, 5]);
+                PB1 = Bezier5(t, pBezier[2, 0], pBezier[2, 1], pBezier[2, 2], pBezier[2, 3], pBezier[2, 4], pBezier[2, 5]);
 
                 GL.Begin(PrimitiveType.Quads);
                 Normal = normal(PB1, PA1, PB0);
@@ -115,8 +119,8 @@ namespace CurveBProyecto
             PB0 = pBezier[3, 0];
             for (t = 0.0; t <= 1.0; t += 0.01)
             {
-                PA1 = Bezier4(t, pBezier[2, 0], pBezier[2, 1], pBezier[2, 2], pBezier[2, 3], pBezier[2, 4]);
-                PB1 = Bezier4(t, pBezier[3, 0], pBezier[3, 1], pBezier[3, 2], pBezier[3, 3], pBezier[3, 4]);
+                PA1 = Bezier5(t, pBezier[2, 0], pBezier[2, 1], pBezier[2, 2], pBezier[2, 3], pBezier[2, 4], pBezier[2, 5]);
+                PB1 = Bezier5(t, pBezier[3, 0], pBezier[3, 1], pBezier[3, 2], pBezier[3, 3], pBezier[3, 4], pBezier[3, 5]);
 
                 GL.Begin(PrimitiveType.Quads);
                 Normal = normal(PB1, PA1, PB0);
@@ -133,8 +137,8 @@ namespace CurveBProyecto
             PB0 = pBezier[4, 0];
             for (t = 0.0; t <= 1.0; t += 0.01)
             {
-                PA1 = Bezier4(t, pBezier[3, 0], pBezier[3, 1], pBezier[3, 2], pBezier[3, 3], pBezier[3, 4]);
-                PB1 = Bezier4(t, pBezier[4, 0], pBezier[4, 1], pBezier[4, 2], pBezier[4, 3], pBezier[4, 4]);
+                PA1 = Bezier5(t, pBezier[3, 0], pBezier[3, 1], pBezier[3, 2], pBezier[3, 3], pBezier[3, 4], pBezier[3, 5]);
+                PB1 = Bezier5(t, pBezier[4, 0], pBezier[4, 1], pBezier[4, 2], pBezier[4, 3], pBezier[4, 4], pBezier[4, 5]);
 
                 GL.Begin(PrimitiveType.Quads);
                 Normal = normal(PB1, PA1, PB0);
@@ -151,8 +155,8 @@ namespace CurveBProyecto
             PB0 = pBezier[5, 0];
             for (t = 0.0; t <= 1.0; t += 0.01)
             {
-                PA1 = Bezier4(t, pBezier[4, 0], pBezier[4, 1], pBezier[4, 2], pBezier[4, 3], pBezier[4, 4]);
-                PB1 = Bezier4(t, pBezier[5, 0], pBezier[5, 1], pBezier[5, 2], pBezier[5, 3], pBezier[5, 4]);
+                PA1 = Bezier5(t, pBezier[4, 0], pBezier[4, 1], pBezier[4, 2], pBezier[4, 3], pBezier[4, 4], pBezier[4, 5]);
+                PB1 = Bezier5(t, pBezier[5, 0], pBezier[5, 1], pBezier[5, 2], pBezier[5, 3], pBezier[5, 4], pBezier[5, 5]);
 
                 GL.Begin(PrimitiveType.Quads);
                 Normal = normal(PB1, PA1, PB0);
@@ -169,8 +173,8 @@ namespace CurveBProyecto
             PB0 = pBezier[6, 0];
             for (t = 0.0; t <= 1.0; t += 0.01)
             {
-                PA1 = Bezier4(t, pBezier[5, 0], pBezier[5, 1], pBezier[5, 2], pBezier[5, 3], pBezier[5, 4]);
-                PB1 = Bezier4(t, pBezier[6, 0], pBezier[6, 1], pBezier[6, 2], pBezier[6, 3], pBezier[6, 4]);
+                PA1 = Bezier5(t, pBezier[5, 0], pBezier[5, 1], pBezier[5, 2], pBezier[5, 3], pBezier[5, 4], pBezier[5, 5]);
+                PB1 = Bezier5(t, pBezier[6, 0], pBezier[6, 1], pBezier[6, 2], pBezier[6, 3], pBezier[6, 4], pBezier[6, 5]);
 
                 GL.Begin(PrimitiveType.Quads);
                 Normal = normal(PB1, PA1, PB0);
@@ -187,8 +191,8 @@ namespace CurveBProyecto
             PB0 = pBezier[7, 0];
             for (t = 0.0; t <= 1.0; t += 0.01)
             {
-                PA1 = Bezier4(t, pBezier[6, 0], pBezier[6, 1], pBezier[6, 2], pBezier[6, 3], pBezier[6, 4]);
-                PB1 = Bezier4(t, pBezier[7, 0], pBezier[7, 1], pBezier[7, 2], pBezier[7, 3], pBezier[7, 4]);
+                PA1 = Bezier5(t, pBezier[6, 0], pBezier[6, 1], pBezier[6, 2], pBezier[6, 3], pBezier[6, 4], pBezier[6, 5]);
+                PB1 = Bezier5(t, pBezier[7, 0], pBezier[7, 1], pBezier[7, 2], pBezier[7, 3], pBezier[7, 4], pBezier[7, 5]);
 
                 GL.Begin(PrimitiveType.Quads);
                 Normal = normal(PB1, PA1, PB0);
@@ -205,8 +209,8 @@ namespace CurveBProyecto
             PB0 = pBezier[8, 0];
             for (t = 0.0; t <= 1.0; t += 0.01)
             {
-                PA1 = Bezier4(t, pBezier[7, 0], pBezier[7, 1], pBezier[7, 2], pBezier[7, 3], pBezier[7, 4]);
-                PB1 = Bezier4(t, pBezier[8, 0], pBezier[8, 1], pBezier[8, 2], pBezier[8, 3], pBezier[8, 4]);
+                PA1 = Bezier5(t, pBezier[7, 0], pBezier[7, 1], pBezier[7, 2], pBezier[7, 3], pBezier[7, 4], pBezier[7, 5]);
+                PB1 = Bezier5(t, pBezier[8, 0], pBezier[8, 1], pBezier[8, 2], pBezier[8, 3], pBezier[8, 4], pBezier[8, 5]);
 
                 GL.Begin(PrimitiveType.Quads);
                 Normal = normal(PB1, PA1, PB0);
@@ -223,8 +227,8 @@ namespace CurveBProyecto
             PB0 = pBezier[9, 0];
             for (t = 0.0; t <= 1.0; t += 0.01)
             {
-                PA1 = Bezier4(t, pBezier[8, 0], pBezier[8, 1], pBezier[8, 2], pBezier[8, 3], pBezier[8, 4]);
-                PB1 = Bezier4(t, pBezier[9, 0], pBezier[9, 1], pBezier[9, 2], pBezier[9, 3], pBezier[9, 4]);
+                PA1 = Bezier5(t, pBezier[8, 0], pBezier[8, 1], pBezier[8, 2], pBezier[8, 3], pBezier[8, 4], pBezier[8, 5]);
+                PB1 = Bezier5(t, pBezier[9, 0], pBezier[9, 1], pBezier[9, 2], pBezier[9, 3], pBezier[9, 4], pBezier[9, 5]);
 
                 GL.Begin(PrimitiveType.Quads);
                 Normal = normal(PB1, PA1, PB0);
@@ -241,8 +245,8 @@ namespace CurveBProyecto
             PB0 = pBezier[10, 0];
             for (t = 0.0; t <= 1.0; t += 0.01)
             {
-                PA1 = Bezier4(t, pBezier[9, 0], pBezier[9, 1], pBezier[9, 2], pBezier[9, 3], pBezier[9, 4]);
-                PB1 = Bezier4(t, pBezier[10, 0], pBezier[10, 1], pBezier[10, 2], pBezier[10, 3], pBezier[10, 4]);
+                PA1 = Bezier5(t, pBezier[9, 0], pBezier[9, 1], pBezier[9, 2], pBezier[9, 3], pBezier[9, 4], pBezier[9, 5]);
+                PB1 = Bezier5(t, pBezier[10, 0], pBezier[10, 1], pBezier[10, 2], pBezier[10, 3], pBezier[10, 4], pBezier[10, 5]);
 
                 GL.Begin(PrimitiveType.Quads);
                 Normal = normal(PB1, PA1, PB0);
@@ -259,8 +263,8 @@ namespace CurveBProyecto
             PB0 = pBezier[11, 0];
             for (t = 0.0; t <= 1.0; t += 0.01)
             {
-                PA1 = Bezier4(t, pBezier[10, 0], pBezier[10, 1], pBezier[10, 2], pBezier[10, 3], pBezier[10, 4]);
-                PB1 = Bezier4(t, pBezier[11, 0], pBezier[11, 1], pBezier[11, 2], pBezier[11, 3], pBezier[11, 4]);
+                PA1 = Bezier5(t, pBezier[10, 0], pBezier[10, 1], pBezier[10, 2], pBezier[10, 3], pBezier[10, 4], pBezier[10, 5]);
+                PB1 = Bezier5(t, pBezier[11, 0], pBezier[11, 1], pBezier[11, 2], pBezier[11, 3], pBezier[11, 4], pBezier[11, 5]);
 
                 GL.Begin(PrimitiveType.Quads);
                 Normal = normal(PB1, PA1, PB0);
@@ -288,7 +292,7 @@ namespace CurveBProyecto
             }
         }
 
-        Punto[,] pBezier = new Punto[12, 5];
+        Punto[,] pBezier = new Punto[12, 6];
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -337,13 +341,14 @@ namespace CurveBProyecto
             pBezier[0, 2] = new Punto(0, 200, -600);
             pBezier[0, 3] = new Punto(300, -400, -600);
             pBezier[0, 4] = new Punto(500, 0, -600);
+            pBezier[0, 5] = new Punto(650, 0, -600);
 
             pBezier[1, 0] = new Punto(-500, 0, -500);
             pBezier[1, 1] = new Punto(-450, 200, -500);
             pBezier[1, 2] = new Punto(0, 200, -500);
             pBezier[1, 3] = new Punto(300, -400, -500);
             pBezier[1, 4] = new Punto(500, 0, -500);
-
+            pBezier[1, 5] = new Punto(650, 0, -500);
 
 
             pBezier[2, 0] = new Punto(-500, 0, -400);
@@ -351,62 +356,72 @@ namespace CurveBProyecto
             pBezier[2, 2] = new Punto(0, 200, -400);
             pBezier[2, 3] = new Punto(300, -400, -400);
             pBezier[2, 4] = new Punto(500, 0, -400);
+            pBezier[2, 5] = new Punto(650, 0, -400);
 
             pBezier[3, 0] = new Punto(-500,0, -300);
             pBezier[3, 1] = new Punto(-450, 200, -300);
             pBezier[3, 2] = new Punto(0, 200, -300);
             pBezier[3, 3] = new Punto(300, -400, -300);
             pBezier[3, 4] = new Punto(500, 0, -300);
+            pBezier[3, 5] = new Punto(650, 0, -300);
 
             pBezier[4, 0] = new Punto(-500, 0, -200);
             pBezier[4, 1] = new Punto(-450, 200, -200);
             pBezier[4, 2] = new Punto(0, 200, -200);
             pBezier[4, 3] = new Punto(300, -400, -200);
             pBezier[4, 4] = new Punto(500, 0, -200);
+            pBezier[4, 5] = new Punto(650, 0, -200);
 
             pBezier[5, 0] = new Punto(-500, 0, -100);
             pBezier[5, 1] = new Punto(-450, 200, -100);
             pBezier[5, 2] = new Punto(0, 200, -100);
             pBezier[5, 3] = new Punto(300, -400, -100);
             pBezier[5, 4] = new Punto(500, 0, -100);
+            pBezier[5, 5] = new Punto(650, 0, -100);
 
             pBezier[6, 0] = new Punto(-500, 0, 0);
             pBezier[6, 1] = new Punto(-450, 200, 0);
             pBezier[6, 2] = new Punto(0, 200, 0);
             pBezier[6, 3] = new Punto(300, -400, 0);
             pBezier[6, 4] = new Punto(500, 0, 0);
+            pBezier[6, 5] = new Punto(650, 0, 0);
 
             pBezier[7, 0] = new Punto(-500, 0, 100);
             pBezier[7, 1] = new Punto(-450, 200, 100);
             pBezier[7, 2] = new Punto(0, 200, 100);
             pBezier[7, 3] = new Punto(300, -400, 100);
             pBezier[7, 4] = new Punto(500, 0, 100);
+            pBezier[7, 5] = new Punto(650, 0, 100);
 
             pBezier[8, 0] = new Punto(-500, 0, 200);
             pBezier[8, 1] = new Punto(-450, 200, 200);
             pBezier[8, 2] = new Punto(0, 200, 200);
             pBezier[8, 3] = new Punto(300, -400, 200);
             pBezier[8, 4] = new Punto(500, 0, 200);
+            pBezier[8, 5] = new Punto(650, 0, 200);
 
             pBezier[9, 0] = new Punto(-500, 0, 300);
             pBezier[9, 1] = new Punto(-450, 200, 300);
             pBezier[9, 2] = new Punto(0, 200, 300);
             pBezier[9, 3] = new Punto(300, -400, 300);
             pBezier[9, 4] = new Punto(500, 0, 300);
+            pBezier[9, 5] = new Punto(650, 0, 300);
 
             pBezier[10, 0] = new Punto(-500, 0, 400);
             pBezier[10, 1] = new Punto(-450, 200, 400);
             pBezier[10, 2] = new Punto(0, 200, 400);
             pBezier[10, 3] = new Punto(300, -400, 400);
             pBezier[10, 4] = new Punto(500, 0, 400);
+            pBezier[10, 5] = new Punto(650, 0, 400);
 
             pBezier[11, 0] = new Punto(-500, 0, 500);
             pBezier[11, 1] = new Punto(-450, 200, 500);
             pBezier[11, 2] = new Punto(0, 200, 500);
             pBezier[11, 3] = new Punto(300, -400, 500);
             pBezier[11, 4] = new Punto(500, 0, 500);
-            
-           
+            pBezier[11, 5] = new Punto(650, 0, 500);
+
+
         }
 
         private void glControl1_Load(object sender, EventArgs e)
@@ -483,13 +498,13 @@ namespace CurveBProyecto
             return Pf;
         }
 
-        Punto Bezier6(double t, Punto P0, Punto P1, Punto P2, Punto P3, Punto P4, Punto P5)
+        Punto Bezier5(double t, Punto P0, Punto P1, Punto P2, Punto P3, Punto P4, Punto P5)
         {
             Punto Pf = new Punto(0, 0, 0);
 
             Pf.x = (P0.x * Math.Pow(1 - t, 5)) + (P1.x * 5 * t * Math.Pow(1 - t, 4)) + (P2.x * 10 * Math.Pow(t, 2) * Math.Pow(1 - t, 3)) + (P3.x * 10 * Math.Pow(t, 3) * Math.Pow(1 - t, 2)) + (P4.x * Math.Pow(t, 4) * (1 - t)) + (P5.x * Math.Pow(t, 5));
-            Pf.y = (P0.y * Math.Pow(1 - t, 5)) + (P1.y * 5 * t * Math.Pow(1 - t, 4)) + (P2.y * 10 * Math.Pow(t, 2) * Math.Pow(1 - t, 3)) + (P3.y * 10 * Math.Pow(t, 3) * Math.Pow(1 - t, 2)) + (P4.y * Math.Pow(t, 4) * (1 - t)) + (P5.x * Math.Pow(t, 5));
-            Pf.z = (P0.z * Math.Pow(1 - t, 5)) + (P1.z * 5 * t * Math.Pow(1 - t, 4)) + (P2.z * 10 * Math.Pow(t, 2) * Math.Pow(1 - t, 3)) + (P3.z * 10 * Math.Pow(t, 3) * Math.Pow(1 - t, 2)) + (P4.z * Math.Pow(t, 4) * (1 - t)) + (P5.x * Math.Pow(t, 5));
+            Pf.y = (P0.y * Math.Pow(1 - t, 5)) + (P1.y * 5 * t * Math.Pow(1 - t, 4)) + (P2.y * 10 * Math.Pow(t, 2) * Math.Pow(1 - t, 3)) + (P3.y * 10 * Math.Pow(t, 3) * Math.Pow(1 - t, 2)) + (P4.y * Math.Pow(t, 4) * (1 - t)) + (P5.y * Math.Pow(t, 5));
+            Pf.z = (P0.z * Math.Pow(1 - t, 5)) + (P1.z * 5 * t * Math.Pow(1 - t, 4)) + (P2.z * 10 * Math.Pow(t, 2) * Math.Pow(1 - t, 3)) + (P3.z * 10 * Math.Pow(t, 3) * Math.Pow(1 - t, 2)) + (P4.z * Math.Pow(t, 4) * (1 - t)) + (P5.z * Math.Pow(t, 5));
 
             return Pf;
         }
