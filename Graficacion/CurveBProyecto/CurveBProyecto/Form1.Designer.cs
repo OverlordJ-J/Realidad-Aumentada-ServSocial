@@ -103,7 +103,8 @@
             "Punto 2",
             "Punto 3",
             "Punto 4",
-            "Punto 5"});
+            "Punto 5",
+            "Punto 6"});
             this.cBoxCoor.Location = new System.Drawing.Point(828, 118);
             this.cBoxCoor.Name = "cBoxCoor";
             this.cBoxCoor.Size = new System.Drawing.Size(121, 21);
@@ -173,29 +174,29 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(650, 263);
+            this.label4.Location = new System.Drawing.Point(671, 264);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(14, 13);
             this.label4.TabIndex = 10;
-            this.label4.Text = "label4";
+            this.label4.Text = "X";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(650, 305);
+            this.label5.Location = new System.Drawing.Point(671, 306);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(14, 13);
             this.label5.TabIndex = 11;
-            this.label5.Text = "label5";
+            this.label5.Text = "Y";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(650, 354);
+            this.label6.Location = new System.Drawing.Point(671, 355);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(14, 13);
             this.label6.TabIndex = 12;
-            this.label6.Text = "label6";
+            this.label6.Text = "Z";
             // 
             // btnActualizar
             // 

@@ -1,0 +1,12 @@
+C:\Users\Juan Jose\Documents\GitHub\Proyectos-Universidad\teselacionkk\Sierpinsky_OpenTK\Sierpinsky_OpenTK\bin\Debug\Sierpinsky_OpenTK.exe.config
+C:\Users\Juan Jose\Documents\GitHub\Proyectos-Universidad\teselacionkk\Sierpinsky_OpenTK\Sierpinsky_OpenTK\bin\Debug\Sierpinsky_OpenTK.exe
+C:\Users\Juan Jose\Documents\GitHub\Proyectos-Universidad\teselacionkk\Sierpinsky_OpenTK\Sierpinsky_OpenTK\bin\Debug\Sierpinsky_OpenTK.pdb
+C:\Users\Juan Jose\Documents\GitHub\Proyectos-Universidad\teselacionkk\Sierpinsky_OpenTK\Sierpinsky_OpenTK\bin\Debug\OpenTK.xml
+C:\Users\Juan Jose\Documents\GitHub\Proyectos-Universidad\teselacionkk\Sierpinsky_OpenTK\Sierpinsky_OpenTK\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Juan Jose\Documents\GitHub\Proyectos-Universidad\teselacionkk\Sierpinsky_OpenTK\Sierpinsky_OpenTK\obj\Debug\Sierpinsky_OpenTK.csprojResolveAssemblyReference.cache
+C:\Users\Juan Jose\Documents\GitHub\Proyectos-Universidad\teselacionkk\Sierpinsky_OpenTK\Sierpinsky_OpenTK\obj\Debug\Sierpinsky_OpenTK.Form1.resources
+C:\Users\Juan Jose\Documents\GitHub\Proyectos-Universidad\teselacionkk\Sierpinsky_OpenTK\Sierpinsky_OpenTK\obj\Debug\Sierpinsky_OpenTK.Properties.Resources.resources
+C:\Users\Juan Jose\Documents\GitHub\Proyectos-Universidad\teselacionkk\Sierpinsky_OpenTK\Sierpinsky_OpenTK\obj\Debug\Sierpinsky_OpenTK.csproj.GenerateResource.Cache
+C:\Users\Juan Jose\Documents\GitHub\Proyectos-Universidad\teselacionkk\Sierpinsky_OpenTK\Sierpinsky_OpenTK\obj\Debug\Sierpinsky_OpenTK.csproj.CoreCompileInputs.cache
+C:\Users\Juan Jose\Documents\GitHub\Proyectos-Universidad\teselacionkk\Sierpinsky_OpenTK\Sierpinsky_OpenTK\obj\Debug\Sierpinsky_OpenTK.exe
+C:\Users\Juan Jose\Documents\GitHub\Proyectos-Universidad\teselacionkk\Sierpinsky_OpenTK\Sierpinsky_OpenTK\obj\Debug\Sierpinsky_OpenTK.pdb
