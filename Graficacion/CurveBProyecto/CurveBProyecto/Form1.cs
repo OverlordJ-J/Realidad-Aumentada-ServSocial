@@ -509,6 +509,17 @@ namespace CurveBProyecto
             return Pf;
         }
 
+        Punto Bezier5mas1(double t, Punto P0, Punto P1, Punto P2, Punto P3, Punto P4, Punto P5, Punto P6)
+        {
+            Punto Pf = new Punto(0, 0, 0);
+
+            Pf.x = (P0.x * Math.Pow(1 - t, 6)) + (P1.x * 6 * t * Math.Pow(1 - t, 5)) + (P2.x * 15 * Math.Pow(t, 2) * Math.Pow(1 - t, 4)) + (P3.x * 20 * Math.Pow(t, 3) * Math.Pow(1 - t, 3)) + (P4.x * Math.Pow(t, 4) * Math.Pow(1 - t, 2)) + (P5.x * Math.Pow(t, 5) * (1 - t)) + (P6.x * Math.Pow(t, 6));
+            Pf.y = (P0.y * Math.Pow(1 - t, 6)) + (P1.y * 6 * t * Math.Pow(1 - t, 5)) + (P2.y * 15 * Math.Pow(t, 2) * Math.Pow(1 - t, 4)) + (P3.y * 20 * Math.Pow(t, 3) * Math.Pow(1 - t, 3)) + (P4.y * Math.Pow(t, 4) * Math.Pow(1 - t, 2)) + (P5.y * Math.Pow(t, 5) * (1 - t)) + (P6.y * Math.Pow(t, 6));
+            Pf.z = (P0.z * Math.Pow(1 - t, 6)) + (P1.z * 6 * t * Math.Pow(1 - t, 5)) + (P2.z * 15 * Math.Pow(t, 2) * Math.Pow(1 - t, 4)) + (P3.z * 20 * Math.Pow(t, 3) * Math.Pow(1 - t, 3)) + (P4.z * Math.Pow(t, 4) * Math.Pow(1 - t, 2)) + (P5.z * Math.Pow(t, 5) * (1 - t)) + (P6.z * Math.Pow(t, 6));
+
+            return Pf;
+        }
+
         #region Normales
         Punto normal(Punto p0, Punto p1, Punto p2)
         {
